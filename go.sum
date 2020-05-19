@@ -72,6 +72,8 @@ github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200508081520-330ca9eb354d h1:vl5i4i
 github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200508081520-330ca9eb354d/go.mod h1:9n2gXim54lj1f90dAIgtMpeUlV/hrlX7G1qwxFglWfE=
 github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200508082120-335e22b0d594 h1:6Z6us94tGDiw98w+qe298PZSvqmzK4K5Wp6oP1dJYjE=
 github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200508082120-335e22b0d594/go.mod h1:9n2gXim54lj1f90dAIgtMpeUlV/hrlX7G1qwxFglWfE=
+github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200517124645-5f0ef2290fb5 h1:/XvKLDWlPAElpSfnIPcANyOA0YBfdP6LgPvjCBN8KP8=
+github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200517124645-5f0ef2290fb5/go.mod h1:9n2gXim54lj1f90dAIgtMpeUlV/hrlX7G1qwxFglWfE=
 github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da h1:KjTM2ks9d14ZYCvmHS9iAKVt9AyzRSqNU1qabPih5BY=
 github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da/go.mod h1:eHEWzANqSiWQsof+nXEI9bUVUyV6F53Fp89EuCh2EAA=
 github.com/akamai/AkamaiOPEN-edgegrid-golang v0.9.8/go.mod h1:aVvklgKsPENRkl29bNwrHISa1F+YLGTHArMxZMBqWM8=
