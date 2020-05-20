@@ -2,9 +2,10 @@ image:
   - Visual Studio 2019
 
 install:
+  - set MINGWDIR=C:\MinGW\bin
   - set GODIR=C:\go114-x86\bin
   - set GOROOT=C:\go114-x86
-  - set PATH=%GODIR%;%PATH%;
+  - set PATH=%GODIR%;%MINGWDIR%;%PATH%;
   - set GOARCH=386
   - go build --tags "api client router" -buildmode=c-shared -o trojan-qt5-core.dll main.go
   - process.bat
