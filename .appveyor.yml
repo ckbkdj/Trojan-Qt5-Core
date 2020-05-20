@@ -17,18 +17,18 @@ init:
 build_script:
   - ren trojan-qt5-core.dll trojan-qt5-core-win.dll
   - ren trojan-qt5-core.h trojan-qt5-core-win.h
-  - ren trojan-qt5-core.a trojan-qt5-core-win.a
+  - ren trojan-qt5-core.lib trojan-qt5-core-win.lib
 
 artifacts:
 - path: 'trojan-qt5-core-win.*'
-  name: trojan-qt5-core-win
+  name: Trojan-Qt5-Core-Win
 
 deploy:
   provider: GitHub
   description: "Trojan-Qt5-Core Release"
   auth_token:
     secure: irJpr7f61rftnluing6Rqm7Q5Lxmk48O48F5t9/3KjaoMsIUh2lUb8SmXQmhkHY9
-  artifact: Trojan-Qt5-Core
+  artifact: Trojan-Qt5-Core-Win
   draft: false
   prerelease: false
   on:
