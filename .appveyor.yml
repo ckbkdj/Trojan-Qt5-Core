@@ -1,0 +1,36 @@
+image:
+  - Visual Studio 2019
+
+install:
+  - set GODIR=C:\go114-x86\bin
+  - set GOROOT=C:\go114-x86
+  - set PATH=%GODIR%;%PATH%;
+  - set GOARCH=386
+  - go build --tags "api client router" -buildmode=c-shared -o trojan-qt5-core.dll main.go
+  - process.bat
+  - python msvc.py
+
+init:
+  - C:\"Program Files (x86)"\"Microsoft Visual Studio"\2019\Community\VC\Auxiliary\Build\vcvarsall.bat x86
+
+build_script:
+  - ren trojan-qt5-core.dll trojan-qt5-core-win.dll
+  - ren trojan-qt5-core.h trojan-qt5-core-win.h
+  - ren trojan-qt5-core.a trojan-qt5-core-win.a
+
+artifacts:
+- path: 'trojan-qt5-core-win.*'
+  name: trojan-qt5-core-win
+
+deploy:
+  provider: GitHub
+  description: "Trojan-Qt5-Core Release"
+  auth_token:
+    secure: irJpr7f61rftnluing6Rqm7Q5Lxmk48O48F5t9/3KjaoMsIUh2lUb8SmXQmhkHY9
+  artifact: Trojan-Qt5-Core
+  draft: false
+  prerelease: false
+  on:
+    branch: master
+    APPVEYOR_REPO_TAG: true
+

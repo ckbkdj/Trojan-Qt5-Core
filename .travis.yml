@@ -1,0 +1,55 @@
+language: go
+
+go:
+  - 1.14.x
+
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode11
+      env:
+        - BADGE=osx
+    - os: linux
+      dist: xenial
+      sudo: required
+      env:
+        - BADGE=linux
+
+before_install:
+  - if [ "$BADGE" = "linux" ]; then
+      sudo apt-get update;
+    fi
+  - if [ "$BADGE" = "osx" ]; then
+      brew update;
+    fi
+
+install:
+  - if [ "$BADGE" = "linux" ]; then
+      sudo apt-get install gcc-7 g++-7 -y;
+      sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-7;
+    fi
+
+script:
+  - go build --tags "api client router" -buildmode=c-archive
+  - if [ "$BADGE" = "osx" ]; then
+      mv trojan-qt5-core.a trojan-qt5-core-mac.a;
+      mv trojan-qt5-core.h trojan-qt5-core-mac.h;
+    fi
+  - if [ "$BADGE" = "linux" ]; then
+      mv trojan-qt5-core.a trojan-qt5-core-linux.a;
+      mv trojan-qt5-core.h trojan-qt5-core-linux.h;
+    fi
+
+deploy:
+  provider: release
+  file:
+    - trojan-qt5-core-mac.a
+    - trojan-qt5-core-mac.h
+    - trojan-qt5-core-linux.a
+    - trojan-qt5-core-linux.h
+  api_key: $GIT_REPO_TOKEN
+  skip_cleanup: true
+  overwrite: true
+  on:
+    branch: master
+    tags: true
