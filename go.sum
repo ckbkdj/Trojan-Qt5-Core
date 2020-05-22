@@ -265,6 +265,8 @@ github.com/p4gefau1t/trojan-go v0.4.8-0.20200508144100-3cc0792f3f2b h1:GLqcVOxed
 github.com/p4gefau1t/trojan-go v0.4.8-0.20200508144100-3cc0792f3f2b/go.mod h1:QoyfAPB3sIpYMmzxQffnQUSt+dwEUGTc+y4XIe9dx2M=
 github.com/p4gefau1t/trojan-go v0.4.8 h1:ybfEgpd1mJiNzK7vcguQWVnVrzDOl6j6s41UWjsstiM=
 github.com/p4gefau1t/trojan-go v0.4.8/go.mod h1:CQrggNvl69CzHQ+n381lR+FrsUPH+csufiYCEZEub1g=
+github.com/p4gefau1t/trojan-go v0.4.11 h1:9hejxYjU2npo9VnRtwoRvhvoz14rL3An7T1SfkmTu0E=
+github.com/p4gefau1t/trojan-go v0.4.11/go.mod h1:CQrggNvl69CzHQ+n381lR+FrsUPH+csufiYCEZEub1g=
 github.com/patrickmn/go-cache v2.1.0+incompatible h1:HRMgzkcYKYpi3C8ajMPV8OFXaaRUnok+kx1WdO15EQc=
 github.com/patrickmn/go-cache v2.1.0+incompatible/go.mod h1:3Qf8kWWT7OJRJbdiICTKqZju1ZixQ/KpMGzzAfe6+WQ=
 github.com/pierrec/lz4 v2.0.5+incompatible/go.mod h1:pdkljMzZIN41W+lC3N2tnIh5sFi+IEE17M5jbnwPHcY=
