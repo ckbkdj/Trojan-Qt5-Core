@@ -76,6 +76,8 @@ github.com/Trojan-Qt5/v2ray-go v0.0.0-20200531015240-446a77509995 h1:K1gny/PhURF
 github.com/Trojan-Qt5/v2ray-go v0.0.0-20200531015240-446a77509995/go.mod h1:XW9pcbnvIgkP4+tj9vNDhYh2mkkdbD7LSt5VnuvC5Uk=
 github.com/Trojan-Qt5/v2ray-go v0.0.0-20200531032940-97e0544377ac h1:4v8O4Mg53xdr/U1DKlWgNlJl9jMa8YbVIPaSNsUqORc=
 github.com/Trojan-Qt5/v2ray-go v0.0.0-20200531032940-97e0544377ac/go.mod h1:XW9pcbnvIgkP4+tj9vNDhYh2mkkdbD7LSt5VnuvC5Uk=
+github.com/Trojan-Qt5/v2ray-go v0.0.0-20200602042548-326fd0689e50 h1:LtBKNkVSufOI1RZD8WPUlBeb0X0fZ7Z4B8bu9zhAGRU=
+github.com/Trojan-Qt5/v2ray-go v0.0.0-20200602042548-326fd0689e50/go.mod h1:XW9pcbnvIgkP4+tj9vNDhYh2mkkdbD7LSt5VnuvC5Uk=
 github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200508060146-f6ae8224dc0f h1:nDcz7Uk9DqUdXOmUbw4TELcvz8VzvB0lXV9v0AYt/qU=
 github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200508060146-f6ae8224dc0f/go.mod h1:I561KgIFBOxY7gge9i5rY4zcPbcl3pZMvLzDkkW6xh8=
 github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200508071948-2305359aae5e h1:ycqbE5xmEdxPM2jGyPSp8HzRSXWINyZ2ucapgZTJ2ms=
@@ -92,6 +94,8 @@ github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200531015240-446a77509995 h1:lCwavp
 github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200531015240-446a77509995/go.mod h1:LhN/W+KhL4rMlryY4jd3M6aO2jUq21fGcFZcFvrr7wA=
 github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200531032940-97e0544377ac h1:2u7o5Eoar/Ia2KYPRmvCor/n0+WkL5FyaG6xcHlL3Ic=
 github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200531032940-97e0544377ac/go.mod h1:45EnDhjhBgLVR8VOEqxuwBtVriPA80QhaCS9JQiHrxk=
+github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200602042548-326fd0689e50 h1:wVdMOtOnWc85A87K0q5W2pkH0jZrihBIdBQfpO1yKE0=
+github.com/Trojan-Qt5/v2ray-go/core v0.0.0-20200602042548-326fd0689e50/go.mod h1:vELd1LQ6kXcrzDBTjIHh7SNflml9QyhU/5He3trcRBY=
 github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da h1:KjTM2ks9d14ZYCvmHS9iAKVt9AyzRSqNU1qabPih5BY=
 github.com/aead/chacha20 v0.0.0-20180709150244-8b13a72661da/go.mod h1:eHEWzANqSiWQsof+nXEI9bUVUyV6F53Fp89EuCh2EAA=
 github.com/akamai/AkamaiOPEN-edgegrid-golang v0.9.8/go.mod h1:aVvklgKsPENRkl29bNwrHISa1F+YLGTHArMxZMBqWM8=
