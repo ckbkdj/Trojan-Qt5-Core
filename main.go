@@ -112,13 +112,11 @@ func stopShadowsocksGo() {
 	shadowsocks.StopGoShadowsocks()
 }
 
-/*
 //export testV2rayGo
 func testV2rayGo(configFile *C.char) (bool, *C.char) {
 	status, err := TestV2ray(C.GoString(configFile))
-	return status,
+	return status, C.CString(err)
 }
-*/
 
 //export startV2rayGo
 func startV2rayGo(configFile *C.char) {
