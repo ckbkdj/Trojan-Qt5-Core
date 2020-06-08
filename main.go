@@ -11,17 +11,18 @@ import (
 	"time"
 
 	//"github.com/Trojan-Qt5/go-tun2socks/common/log"
-	"github.com/Trojan-Qt5/go-shadowsocks2/cmd/shadowsocks"
 	_ "github.com/Trojan-Qt5/go-tun2socks/common/log/simple"
 	"github.com/Trojan-Qt5/go-tun2socks/core"
 	"github.com/Trojan-Qt5/go-tun2socks/proxy/socks"
 	"github.com/Trojan-Qt5/go-tun2socks/tun"
 
-	v2ray "github.com/Trojan-Qt5/v2ray-go/core"
-)
-import (
+	_ "github.com/p4gefau1t/trojan-go/build"
 	"github.com/p4gefau1t/trojan-go/common"
 	"github.com/p4gefau1t/trojan-go/log"
+
+	"github.com/Trojan-Qt5/go-shadowsocks2/cmd/shadowsocks"
+
+	v2ray "github.com/Trojan-Qt5/v2ray-go/core"
 )
 
 const (
@@ -114,7 +115,7 @@ func stopShadowsocksGo() {
 
 //export testV2rayGo
 func testV2rayGo(configFile *C.char) (bool, *C.char) {
-	status, err := TestV2ray(C.GoString(configFile))
+	status, err := v2ray.TestV2ray(C.GoString(configFile))
 	return status, C.CString(err)
 }
 
